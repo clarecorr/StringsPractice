@@ -77,11 +77,11 @@ namespace StringsPractice
             //    Console.WriteLine("last must be longer!");
             //}
 
-            Console.WriteLine("Enter a person's name");
-            string nameOne = Console.ReadLine();
-            Console.WriteLine("Enter another person's name");
-            string nameTwo = Console.ReadLine();
-            
+            //Console.WriteLine("Enter a person's name");
+            //string nameOne = Console.ReadLine();
+            //Console.WriteLine("Enter another person's name");
+            //string nameTwo = Console.ReadLine();
+
             //if(nameOne == nameTwo)
             //{
             //    Console.WriteLine("The names are the same");
@@ -91,16 +91,46 @@ namespace StringsPractice
             //    Console.WriteLine("The names are different");
             //}
 
-            if(nameOne.Equals(nameTwo))
+            //if(nameOne.Equals(nameTwo))
+            //{
+            //    Console.WriteLine("The names are the same");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The names are different");
+            //} 
+
+            Console.WriteLine("Enter a single digit whole number");
+            int number = int.Parse(Console.ReadLine());
+
+            if(number < -9 || number > 9)
             {
-                Console.WriteLine("The names are the same");
+                Console.WriteLine("You must enter a single digit whole number");
             }
             else
             {
-                Console.WriteLine("The names are different");
-            } 
-
-            
+                switch(number)
+                {
+                    case 0:
+                        Console.WriteLine("1");
+                        break;
+                    case 4:
+                        Console.WriteLine("1");
+                        break;
+                    case 6:
+                        Console.WriteLine("1");
+                        break;
+                    case 8:
+                        Console.WriteLine("2");
+                        break;
+                    case 9:
+                        Console.WriteLine("1");
+                        break;
+                    default:
+                        Console.WriteLine("1");
+                        break;
+                }
+            }
         }
     }
 }
